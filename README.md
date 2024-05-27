@@ -1,7 +1,3 @@
-Claro! Aqui está um README detalhado, como se o projeto já estivesse completamente configurado e pronto para ser executado por terceiros.
-
----
-
 # Weather App by CEP
 
 ## Descrição
