@@ -51,5 +51,5 @@ Este é um sistema desenvolvido em Go que recebe um CEP, identifica a cidade e r
 URL do Google Cloud Run. Use essa URL para fazer requisições:
 
 ```sh
-curl -X GET https://[YOUR_CLOUD_RUN_URL]/weather/29902555
+curl -X GET https://goexpert-temperature-system-by-cep-xhekudbara-uc.a.run.app/weather/29902555
 ```
