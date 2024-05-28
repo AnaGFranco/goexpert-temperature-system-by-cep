@@ -5,6 +5,7 @@ import (
 	"fmt"
 	weather "goexpert-temperature-system-by-cep/internal/domain"
 	"net/http"
+	"net/url"
 )
 
 //go:generate mockery --name WeatherRepository --outpkg mock --output mock --filename weather.go --with-expecter=true
@@ -28,7 +29,8 @@ func NewWeatherRepository(client *http.Client, url, apiKey string) WeatherReposi
 }
 
 func (r *weatherRepository) GetWeatherByLocation(location string) (*weather.Weather, error) {
-	url := fmt.Sprintf("%s?key=%s&q=%s", r.url, r.apiKey, location)
+	escapedLocation := url.QueryEscape(location)
+	url := fmt.Sprintf("%s?key=%s&q=%s", r.url, r.apiKey, escapedLocation)
 	resp, err := r.client.Get(url)
 	if err != nil {
 		return nil, err
