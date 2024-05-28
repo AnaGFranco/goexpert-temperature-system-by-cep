@@ -57,6 +57,5 @@ curl -X GET  https://goexpert-temperature-system-by-cep-xhekudbara-uc.a.run.app/
 ```sh
 curl -X GET https://goexpert-temperature-system-by-cep-xhekudbara-uc.a.run.app/weather/01153000
 ```
-
-
+<img width="891" alt="image" src="https://github.com/AnaGFranco/goexpert-temperature-system-by-cep/assets/55562874/25320131-a1ec-4975-b29f-d5439181fcd3">
 
