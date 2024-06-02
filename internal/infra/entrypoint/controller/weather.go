@@ -27,12 +27,8 @@ func (h *WeatherController) GetWeather(c *gin.Context) {
 	}
 
 	location, err := h.zipCodeService.GetLocationByZipCode(zipCode)
-	if err != nil {
-		if err.Error() == "can not find zipcode" {
-			c.JSON(http.StatusNotFound, gin.H{"message": "can not find zipcode"})
-		} else {
-			c.JSON(http.StatusUnprocessableEntity, gin.H{"message": "invalid zipcode"})
-		}
+	if location.Localidade == "" {
+		c.JSON(http.StatusNotFound, gin.H{"message": "can not find zipcode"})
 		return
 	}
 
