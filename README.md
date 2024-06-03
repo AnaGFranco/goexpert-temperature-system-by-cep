@@ -60,7 +60,6 @@ curl -X GET https://goexpert-temperature-system-by-cep-xhekudbara-uc.a.run.app/w
 
 Código HTTP: 404
 Mensagem: can not find zipcode
-
 <img width="1373" alt="image" src="https://github.com/AnaGFranco/goexpert-temperature-system-by-cep/assets/55562874/134d9cf6-0870-4683-bc4b-c35e591dcc31">
 
 
