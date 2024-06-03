@@ -57,8 +57,19 @@ curl -X GET  https://goexpert-temperature-system-by-cep-xhekudbara-uc.a.run.app/
 ```sh
 curl -X GET https://goexpert-temperature-system-by-cep-xhekudbara-uc.a.run.app/weather/01153000
 ```
-<img width="891" alt="image" src="https://github.com/AnaGFranco/goexpert-temperature-system-by-cep/assets/55562874/25320131-a1ec-4975-b29f-d5439181fcd3">
+
+Código HTTP: 404
+Mensagem: can not find zipcode
 
 <img width="1373" alt="image" src="https://github.com/AnaGFranco/goexpert-temperature-system-by-cep/assets/55562874/134d9cf6-0870-4683-bc4b-c35e591dcc31">
+
+
+Código HTTP: 422
+Mensagem: invalid zipcode
+<img width="1373" alt="image" src="https://github.com/AnaGFranco/goexpert-temperature-system-by-cep/assets/55562874/53bead93-1a0a-4949-bf56-4ec7f321c320">
+
+Código HTTP: 200
+Response Body: { "temp_C": 15, "temp_F": 59, "temp_K": 288.15 }
+<img width="1373" alt="image" src="https://github.com/AnaGFranco/goexpert-temperature-system-by-cep/assets/55562874/cbcc5a1e-8c52-4107-9c9b-b25a23ff9a9c">
 
 
